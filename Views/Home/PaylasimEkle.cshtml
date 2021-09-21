@@ -1,0 +1,29 @@
+﻿@model BlogApiChallange.Models.Paylasim
+@{
+    ViewBag.Title = "Paylasim Ekle";
+}
+
+<div class="panel panel-success">
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                <label>Paylaşım Başlığı: </label>
+                @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control"})
+            </div>
+            <div class="form-group">
+                <label>Paylaşım İçeriği: </label>
+                @Html.TextBoxFor(x => x.Content, new { @class = "form-control" })
+            </div>
+            
+            <div class="text-center ">
+                <input class="btn btn-success" type="submit" value="Ekle"/>
+            </div>
+
+        }
+
+
+    </div>
+
+</div>
+
